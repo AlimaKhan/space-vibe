@@ -68,7 +68,7 @@ nav ul li a {
 
 .hero {
     font-family: monospace;
-    font-size: 8rem;
+    font-size: 10vw;
     -webkit-text-stroke: 0.8px rgba(214, 212, 206, 0.89);
     color: transparent;
     height: 100vh;
@@ -87,7 +87,9 @@ nav ul li a {
 
 .astronaut {
     position: absolute;
-    width: 500px;
+    width: 40vw;
+    max-width:100%;
+    height: auto;
     right: 0;
     top: 30%;
     z-index: 3;
@@ -118,7 +120,7 @@ ul li a :hover::after {
 
 @keyframes float {
     0% {
-        transfrom: translateY(0);
+        transform: translateY(0);
     }
 
     50% {
@@ -160,7 +162,7 @@ ul li a :hover::after {
 
 .cosmos h2 {
     font-family: monospace;
-    font-size: 7rem;
+    font-size: 8vw;
     -webkit-text-stroke: 4px rgb(252, 246, 246);
     color: transparent;
 }
@@ -182,7 +184,9 @@ ul li a :hover::after {
 
 .spaceship {
     position: absolute;
-    width: 500px;
+    width: 40vw;
+    max-width:100%;
+    height:auto;
     right: 0;
     top: 50%;
     z-index: 3;
@@ -190,7 +194,7 @@ ul li a :hover::after {
 
 }
 @keyframes float{
-    0% {transfrom: translateY(0);}
+    0% {transform: translateY(0);}
     50%{transform: translateY(-50px);}
     100%{transform: translateY(0);}
 }
@@ -207,4 +211,12 @@ ul li a :hover::after {
         width: 100px;
         top: 60%;
     }
+}
+.moon h2 {
+    font-size:3vw;
+    text-align:centre;
+    padding:1rem;
+    flex-direction:column;
+    align-a=item:centre;
+    gap:1rem;
 }

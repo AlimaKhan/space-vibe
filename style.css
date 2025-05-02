@@ -1,0 +1,210 @@
+/* reset default size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: floralwhite;
+    font-family: monospace;
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes blink {
+    60% {
+        border-color: transparent;
+
+    }
+}
+
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.hero {
+    font-family: monospace;
+    font-size: 8rem;
+    -webkit-text-stroke: 0.8px rgba(214, 212, 206, 0.89);
+    color: transparent;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/planet-volumes-4NCABZm3WmM-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.astronaut {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 30%;
+    z-index: 3;
+    animation: float 6s ease-in-out infinite;
+
+}
+
+ul li a:hover {
+    color: #01fefe;
+    text-shadow: 0 0 10px #01fefe;
+}
+
+ul li a ::after {
+    content: '';
+    bottom: -25px;
+    height: 0px;
+    width: 10px;
+    position: absolute;
+    background-color: #01fefe;
+    border-radius: 50%;
+    transition: all 300ms;
+}
+
+ul li a :hover::after {
+    height: 10px;
+    left: 50px;
+}
+
+@keyframes float {
+    0% {
+        transfrom: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px) {
+    .astronaut {
+        width: 150px;
+        left: 5%;
+        top: 30%;
+    }
+}
+
+@media(max-width:480px) {
+    .astronaut {
+        width: 100px;
+        top: 40%;
+    }
+}
+
+.cosmos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/boliviainteligente-wrMbee9-KSM-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cosmos h2 {
+    font-family: monospace;
+    font-size: 7rem;
+    -webkit-text-stroke: 4px rgb(252, 246, 246);
+    color: transparent;
+}
+
+.moon {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/bg.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ 
+
+.spaceship {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 50%;
+    z-index: 3;
+    animation: float 9s ease-in-out infinite;
+
+}
+@keyframes float{
+    0% {transfrom: translateY(0);}
+    50%{transform: translateY(-50px);}
+    100%{transform: translateY(0);}
+}
+ 
+@media (max-width:768px){
+    .spaceship{
+        width: 150px;
+        right: 0%;
+        top: 30%;
+    }
+}
+@media(max-width:480px){
+    .spaceship{
+        width: 100px;
+        top: 60%;
+    }
+}

@@ -34,6 +34,8 @@ nav h1 {
     white-space: nowrap;
     border-right: 1px solid;
     animation: typing 15s steps(25) infinite alternate-reverse;
+    width:12ch;
+    flex-shrink:0
 }
 
 @keyframes typing {
@@ -42,7 +44,7 @@ nav h1 {
     }
 
     to {
-        width:10ch;
+        width:12ch;
     }
 }
 
